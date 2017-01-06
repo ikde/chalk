@@ -12,5 +12,8 @@
     </div>
   </main>
   {% include javascripts.html %}
+  {% if site.tajs_qq %}
+    <script type="text/javascript" src="//tajs.qq.com/stats?sId={{ site.tajs_qq }}" charset="UTF-8"></script>
+  {% endif %}
 </body>
 </html>
