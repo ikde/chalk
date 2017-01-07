@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "APlayer 测试"
-description: "APlayer 测试,ikde.net,www.ikde.net"
+description: "例子来自 http://aplayer.js.org/"
 tags: [music, aplayer]
 ---
 
-### APlayer
+### APlayer效果
 <div markdown="0">
 <div id="player1" class="aplayer"></div>
 <script>
@@ -41,14 +41,12 @@ var ap1 = new APlayer({
 </script>
 </div>
 
-### html
-
+### html代码
 {% highlight html %}
 <div id="player1" class="aplayer"></div>
 {% endhighlight %}
 
-### javascript
-
+### javascript代码
 {% highlight javascript %}
 var ap1 = new APlayer({
     element: document.getElementById('player1'),
