@@ -5,7 +5,7 @@ description: "例子来自 http://aplayer.js.org/"
 tags: [music, aplayer]
 ---
 
-### APlayer效果
+### APlayer 播放效果
 <div markdown="0">
 <div id="player1" class="aplayer"></div>
 <script>
@@ -40,13 +40,13 @@ var ap1 = new APlayer({
 });
 </script>
 </div>
-
-### html代码
+<p></p><p></p>
+### html 代码
 {% highlight html %}
 <div id="player1" class="aplayer"></div>
 {% endhighlight %}
 
-### javascript代码
+### javascript 代码
 {% highlight javascript %}
 var ap1 = new APlayer({
     element: document.getElementById('player1'),
