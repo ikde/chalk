@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>ikde | APlayer 测试</title>
+  <meta name="description" content="例子来自 http://aplayer.js.org/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link href="/feed.xml" type="application/rss+xml" rel="alternate" title="ikde Last 10 blog posts" />
+  <link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+  
+    <link type="text/css" rel="stylesheet" href="/assets/light.css">
+  
+  <script type="text/javascript">var _speedMark = new Date();</script>
+  <script type="text/javascript" src="/assets/APlayer.min.js"></script>
+</head>
+
+<body>
+  <main role="main">
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav reveal">
+  <a href="/" class="header-logo" title="ikde">ikde</a>
+  <ul class="header-links">
+    
+      <li>
+        <a href="/about" title="About me">
+          <span class="icon icon-android-person"></span>
+        </a>
+      </li>
+    
+    
+    
+    
+      <li>
+        <a href="https://github.com/ikde" target="_blank" title="GitHub">
+          <span class="icon icon-social-github"></span>
+        </a>
+      </li>
+    
+    
+    
+    
+    
+    
+      <li>
+        <a href="mailto:ikde@ikde.net" title="Email">
+          <span class="icon icon-at"></span>
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="/feed.xml" target="_blank" title="RSS">
+          <span class="icon icon-social-rss"></span>
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+        <article class="article reveal">
+          <header class="article-header">
+            <h1>APlayer 测试</h1>
+            <p>例子来自 http://aplayer.js.org/</p>
+            <div class="article-list-footer">
+              <span class="article-list-date">
+                January 7, 2017
+              </span>
+              <span class="article-list-divider">-</span>
+              <span class="article-list-minutes">
+                
+                
+                  1 minute read
+                
+              </span>
+              <span class="article-list-divider">-</span>
+              <div class="article-list-tags">
+                
+                  <a href="/tag/music">music</a>
+                
+                  <a href="/tag/aplayer">aplayer</a>
+                
+              </div>
+            </div>
+          </header>
+
+          <div class="article-content">
+            <h3 id="aplayer-播放效果">APlayer 播放效果</h3>
+<div>
+<div id="player1" class="aplayer"></div>
+<script>
+var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#ad7a86',
+    mode: 'random',
+    music: [
+        {
+            title: 'あっちゅ～ま青春!',
+            author: '七森中☆ごらく部',
+            url: 'https://ikdenet.duapp.com/static/あっちゅ～ま青春!.mp3',
+            pic: 'https://ikdenet.duapp.com/static/あっちゅ～ま青春!.jpg'
+        },
+        {
+            title: 'secret base~君がくれたもの~',
+            author: '茅野愛衣',
+            url: 'https://ikdenet.duapp.com/static/secret base~.mp3',
+            pic: 'https://ikdenet.duapp.com/static/secret base~.jpg'
+        },
+        {
+            title: '回レ！雪月花',
+            author: '小倉唯',
+            url: 'https://ikdenet.duapp.com/static/回レ！雪月花.mp3',
+            pic: 'https://ikdenet.duapp.com/static/回レ！雪月花.jpg'
+        }
+    ]
+});
+</script>
+</div>
+<p></p>
+<p></p>
+<h3 id="html-代码">html 代码</h3>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"player1"</span> <span class="na">class=</span><span class="s">"aplayer"</span><span class="nt">&gt;&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="javascript-代码">javascript 代码</h3>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">ap1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">APlayer</span><span class="p">({</span>
+    <span class="na">element</span><span class="p">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'player1'</span><span class="p">),</span>
+    <span class="na">narrow</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="na">autoplay</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="na">showlrc</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="na">mutex</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">theme</span><span class="p">:</span> <span class="s1">'#ad7a86'</span><span class="p">,</span>
+    <span class="na">mode</span><span class="p">:</span> <span class="s1">'random'</span><span class="p">,</span>
+    <span class="na">music</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="na">title</span><span class="p">:</span> <span class="s1">'あっちゅ～ま青春!'</span><span class="p">,</span>
+            <span class="na">author</span><span class="p">:</span> <span class="s1">'七森中☆ごらく部'</span><span class="p">,</span>
+            <span class="na">url</span><span class="p">:</span> <span class="s1">'https://ikdenet.duapp.com/static/あっちゅ～ま青春!.mp3'</span><span class="p">,</span>
+            <span class="na">pic</span><span class="p">:</span> <span class="s1">'https://ikdenet.duapp.com/static/あっちゅ～ま青春!.jpg'</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="na">title</span><span class="p">:</span> <span class="s1">'secret base~君がくれたもの~'</span><span class="p">,</span>
+            <span class="na">author</span><span class="p">:</span> <span class="s1">'茅野愛衣'</span><span class="p">,</span>
+            <span class="na">url</span><span class="p">:</span> <span class="s1">'https://ikdenet.duapp.com/static/secret base~.mp3'</span><span class="p">,</span>
+            <span class="na">pic</span><span class="p">:</span> <span class="s1">'https://ikdenet.duapp.com/static/secret base~.jpg'</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="na">title</span><span class="p">:</span> <span class="s1">'回レ！雪月花'</span><span class="p">,</span>
+            <span class="na">author</span><span class="p">:</span> <span class="s1">'小倉唯'</span><span class="p">,</span>
+            <span class="na">url</span><span class="p">:</span> <span class="s1">'https://ikdenet.duapp.com/static/回レ！雪月花.mp3'</span><span class="p">,</span>
+            <span class="na">pic</span><span class="p">:</span> <span class="s1">'https://ikdenet.duapp.com/static/回レ！雪月花.jpg'</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">});</span></code></pre></figure>
+
+
+          </div>
+          
+        </article>
+        <footer class="footer reveal">
+  <p>Copyright &copy; 2016-2017 <a href="//ikde.net/">ikde.net</a>. 蜀ICP备15031713号-1</p>
+  <p>Buit with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://github.com/nielsenramon/chalk" target="_blank">Chalk theme</a> •</p>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="/assets/vendor.js"></script>
+<script type="text/javascript" src="/assets/application.js"></script>
+
+
+  <script type="text/javascript" src="//tajs.qq.com/stats?sId=51896876" charset="UTF-8"></script>
+
+<script src="//apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</body>
+</html>
